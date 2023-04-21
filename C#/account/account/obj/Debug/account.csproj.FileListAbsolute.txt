@@ -1,0 +1,8 @@
+E:\DOTNET\account\account\bin\Debug\account.exe.config
+E:\DOTNET\account\account\bin\Debug\account.exe
+E:\DOTNET\account\account\bin\Debug\account.pdb
+E:\DOTNET\account\account\obj\Debug\account.csproj.AssemblyReference.cache
+E:\DOTNET\account\account\obj\Debug\account.csproj.SuggestedBindingRedirects.cache
+E:\DOTNET\account\account\obj\Debug\account.csproj.CoreCompileInputs.cache
+E:\DOTNET\account\account\obj\Debug\account.exe
+E:\DOTNET\account\account\obj\Debug\account.pdb

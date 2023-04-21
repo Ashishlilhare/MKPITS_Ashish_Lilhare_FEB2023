@@ -1,0 +1,8 @@
+E:\DOTNET\Index of method\Index of method\bin\Debug\Index of method.exe.config
+E:\DOTNET\Index of method\Index of method\bin\Debug\Index of method.exe
+E:\DOTNET\Index of method\Index of method\bin\Debug\Index of method.pdb
+E:\DOTNET\Index of method\Index of method\obj\Debug\Index of method.csproj.AssemblyReference.cache
+E:\DOTNET\Index of method\Index of method\obj\Debug\Index of method.csproj.SuggestedBindingRedirects.cache
+E:\DOTNET\Index of method\Index of method\obj\Debug\Index of method.csproj.CoreCompileInputs.cache
+E:\DOTNET\Index of method\Index of method\obj\Debug\Index of method.exe
+E:\DOTNET\Index of method\Index of method\obj\Debug\Index of method.pdb

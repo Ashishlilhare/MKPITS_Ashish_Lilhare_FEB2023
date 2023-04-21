@@ -1,0 +1,8 @@
+E:\DOTNET\local and class variable\local and class variable\bin\Debug\local and class variable.exe.config
+E:\DOTNET\local and class variable\local and class variable\bin\Debug\local and class variable.exe
+E:\DOTNET\local and class variable\local and class variable\bin\Debug\local and class variable.pdb
+E:\DOTNET\local and class variable\local and class variable\obj\Debug\local and class variable.csproj.AssemblyReference.cache
+E:\DOTNET\local and class variable\local and class variable\obj\Debug\local and class variable.csproj.SuggestedBindingRedirects.cache
+E:\DOTNET\local and class variable\local and class variable\obj\Debug\local and class variable.csproj.CoreCompileInputs.cache
+E:\DOTNET\local and class variable\local and class variable\obj\Debug\local and class variable.exe
+E:\DOTNET\local and class variable\local and class variable\obj\Debug\local and class variable.pdb

@@ -1,0 +1,8 @@
+E:\DOTNET\Cube_function__recursion\Cube_function__recursion\bin\Debug\Cube_function__recursion.exe.config
+E:\DOTNET\Cube_function__recursion\Cube_function__recursion\bin\Debug\Cube_function__recursion.exe
+E:\DOTNET\Cube_function__recursion\Cube_function__recursion\bin\Debug\Cube_function__recursion.pdb
+E:\DOTNET\Cube_function__recursion\Cube_function__recursion\obj\Debug\Cube_function__recursion.csproj.AssemblyReference.cache
+E:\DOTNET\Cube_function__recursion\Cube_function__recursion\obj\Debug\Cube_function__recursion.csproj.SuggestedBindingRedirects.cache
+E:\DOTNET\Cube_function__recursion\Cube_function__recursion\obj\Debug\Cube_function__recursion.csproj.CoreCompileInputs.cache
+E:\DOTNET\Cube_function__recursion\Cube_function__recursion\obj\Debug\Cube_function__recursion.exe
+E:\DOTNET\Cube_function__recursion\Cube_function__recursion\obj\Debug\Cube_function__recursion.pdb
