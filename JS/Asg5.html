@@ -1,0 +1,30 @@
+<html>
+<h1 align="center">PERSONAL ID</h1> 
+<body > 
+	First name:<input type="text" id="a0"/><br><br>
+	Last name:<input type="text" id="a1"/><br><br>
+	email:<input type="text" id="a2"/><br><br>
+	mobile no.:<input type="text" id="a3"/><br><br>
+	<input type="button" value="SINGNUP" onclick="SINGUP();"/>
+	<br><br><span id="s1">First name:</span>
+	<br><br><span id="s2">Last name:</span>
+	<br><br><span id="s3">email:</span>
+	<br><br><span id="s4">mobile no.:</span>
+</body>
+<script langauge="javascript">
+	function SINGUP()
+	{
+	var num1,num2,num3,num4;
+	num1=document.getElementById("a0").value;
+	num2=document.getElementById("a1").value;
+	num3=document.getElementById("a2").value;
+	num4=document.getElementById("a3").value;
+	
+	document.getElementById("s1").innerHTML="First name=" + num1;
+	document.getElementById("s2").innerHTML="Last name=" + num2;
+	document.getElementById("s3").innerHTML="email=" + num3;
+	document.getElementById("s4").innerHTML="mobile no.=" + num4;
+	}
+	
+</script>
+</html>

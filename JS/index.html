@@ -1,0 +1,59 @@
+<!Doctype Html>
+<html>
+    <style>
+        td {text-align:center;background-color: rgb(173, 141, 204); }
+        </style>
+        <form name="f1"  style="width:500;height:200;">
+            <table width=50% align=center  >
+                <tr>
+                    <td><input type=text name="t1" style="width:95%;height:30px;;padding:5px;"  /></td>
+                  </tr>
+            </table>
+            <table width=50% align=center  >
+                <tr>
+                    <td><input type=button name="b1" value="1" style="padding:15px; border:2px solid rgba(9, 46, 114, 0.486);" onclick="show1();" /></td>
+                    <td><input type=button name="b2" value="2" style="padding:15px;border:2px solid rgba(9, 46, 114, 0.486);" onclick="show2();" /></td>
+                    <td><input type=button name="b3" value="3" style="padding:15px;border:2px solid rgba(9, 46, 114, 0.486);" onclick="show3();" /></td>
+                 </tr>
+                 <tr>
+                    <td><input type=button name="b4" value="+" style="padding:15px;border:2px solid rgba(9, 46, 114, 0.486);" onclick="showplus();" /></td>
+                    <td><input type=button name="b5" value="-" style="padding:15px;border:2px solid rgba(9, 46, 114, 0.486);" onclick="showminus();" /></td>
+                    <td><input type=button name="b6" value="=" style="padding:15px;border:2px solid rgba(9, 46, 114, 0.486);" onclick="showresult();" /></td> 
+                 </tr>
+            </table>
+        <script>
+            var prevnum=0;
+            var operator;
+                function show1()
+                {
+                    document.f1.t1.value="";
+                    document.f1.t1.value="1";
+                }
+                function show2()
+                {
+                document.f1.t1.value="2";
+                }
+                function show3()
+                {
+                document.f1.t1.value="3";
+                }
+                function showplus()
+                {
+                //storing the text value in prevnumber variable
+                prevnum=document.f1.t1.value;
+                //alert("prev number is " + prevnum);
+                document.f1.t1.value="+";
+                }
+                function showminus()
+                {
+                //storing the text value in prevnumber variable
+                prevnum=document.f1.t1.value;
+                document.f1.t1.value="-";
+                }
+                function showresult()
+                {
+                var result=parseInt(prevnum) + parseInt(document.f1.t1.value);
+                document.f1.t1.value=result;
+                }           
+        </script> 
+</html>

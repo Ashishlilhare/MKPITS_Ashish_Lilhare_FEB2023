@@ -1,0 +1,163 @@
+<style>
+table {border:1px solid red;}
+td {padding:20px; text-align:center;}
+</style>
+<script>
+  // Timer Code 10 sec
+  var counter = 10;
+  
+  //function to start timer
+  function startTimer()
+  {
+   setInterval(function() {
+    counter--;
+    if (counter >= 00) {
+      span = document.getElementById("count");
+      span.innerHTML ="00:"+counter +" sec";
+    }
+    if (counter == -1) {
+        alert('sorry, out of time');
+        clearInterval(counter);
+	
+    }
+  }, 1000);
+ }
+ //end of function startTimer
+ 
+ //code to get randomnumber and fill it  in an array
+    var a1 = new Array();
+            var n = 3;  
+            do {
+                 var randomNumber = Math.floor(Math.random() * 3) + 1;
+				 
+                 if (!a1.includes(randomNumber))
+	                {
+                      a1.push(randomNumber);
+                    }
+               } while (a1.length < n);
+  //end of code to fill random number in an array
+  
+  //function to fill button randomly from the array
+  function strt()
+		  {
+		  var x=document.getElementById('b1');
+		   x.innerHTML=a1[0];
+		   
+		   var x=document.getElementById('b2');
+		   x.innerHTML=a1[1];
+		   
+		   var x=document.getElementById('b3');
+		   x.innerHTML=a1[2];
+		   document.getElementById("str").disabled = true;
+		 }
+		 //end of function to fill button
+		 
+  //code to check whether the user had pressed proper button or not
+   var arrN=[1,2,3];
+		var r=0;
+		 var y;
+	//start of function one
+		 function one()
+		 {
+		 document.getElementById("b1").style.background="red";
+		 y=document.getElementById("b1").innerHTML;
+		 document.getElementById("b1").disabled=true;
+	//	  alert(y);
+		 if(y==arrN[r])
+		 {
+		 r=r+1;
+		// alert("r="+r);
+		showresult();
+		 }
+		 else
+		 {
+		 alert("you loose the game , better luck next time ");
+		 counter=-1;
+		 clearInterval(counter);
+		 }
+		 }
+  //end of function one
+  
+  //start of function two
+		 function two()
+		 {
+		 document.getElementById("b2").style.background="red";
+		 y=document.getElementById("b2").innerHTML;
+		  document.getElementById("b2").disabled=true;
+	//	  alert(y);
+		 if(y==arrN[r])
+		 {
+		 r=r+1;
+		// alert("r="+r);
+		showresult();
+		 }
+		 else
+		 {
+		 alert("you loose the game , better luck next time ");
+		 counter=-1;
+		 clearInterval(counter);
+		 }
+		 }
+  //end of function two
+  
+  
+  //start of function three
+		 function three()
+		 {
+		 document.getElementById("b3").style.background="red";
+		 y=document.getElementById("b3").innerHTML;
+		  document.getElementById("b3").disabled=true;
+	//	  alert(y);
+		 if(y==arrN[r])
+		 {
+		 r=r+1;
+		// alert("r="+r);
+		showresult();
+		 }
+		 else
+		 {
+		 alert("you loose the game , better luck next time ");
+		 counter=-1;
+		 clearInterval(counter);
+		 }
+		 }
+  //end of function three
+  
+  //code to show final result
+  function showresult()
+  {
+  if(r==3)
+  {
+  //alert("r="+r);
+  alert("congratulations , you won the game");
+   counter=-1;
+		 clearInterval(counter);
+		 document.getElementById("p1").innerHTML="congratulations you won the game";
+  }
+  }
+  
+ 
+ function start()
+ {
+    document.getElementById("count").style="color:green;";
+    startTimer();
+ };//End of Timer
+ </script>
+  <body bgcolor=powderblue>
+       <center> 
+          
+		  <h3>Time reamains: 
+		  <span id="count"><font color=red>00:10 min</font></span>
+		  </h3>
+		  <button type="button" class="b" onclick="start();strt();" id="str" >Start</button>
+	</center>
+	<hr>
+	<table align=center>
+     <tr>
+      <td><button type="button" onclick="one()" id="b1" >-</button></td>
+	  <td><button type="button" onclick="two()" id="b2" >-</button></td>
+	  <td><button type="button" onclick="three()" id="b3" >-</button></td>
+	  </tr>
+	  </table>
+		<p align=center id="p1" >Final result out of 3 : </p>
+  </body>

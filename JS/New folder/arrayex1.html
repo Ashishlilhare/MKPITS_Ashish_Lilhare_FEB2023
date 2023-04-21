@@ -1,0 +1,26 @@
+<html>
+    <h1>wap to create a form to get input from user to show result</h1>
+    <body>
+        Subject 1 marks =<input type="text" Id="s1"/><br><br>
+            Subject 2 marks=<input type="text" Id="s2"/><br><br>
+            Subject 3 marks=<input type="text"Id="s3"/><br><br>
+        <input type="button" value="reult" onclick="check();"/><br><br>
+        <br>result=<span id="res1"> </span> <br><br>
+        <br>percentage=<span id="res2">     </span>
+    </body>
+    <script>
+        function check()
+        {
+            var mark=new Array();
+            var total;
+            var per;
+            mark[0]=parseInt(document.getElementById("s1").value);
+            mark[1]=parseInt(document.getElementById("s2").value);
+            mark[2]=parseInt(document.getElementById("s3").value);
+            var total=mark[0]+mark[1]+mark[2];
+            var per= parseFloat(total * 0.3);
+            document.getElementById("res1").innerHTML= total ;
+            document.getElementById("res2").innerHTML= per ;
+        }
+    </script>
+</html>

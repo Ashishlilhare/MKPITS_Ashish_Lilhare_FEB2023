@@ -1,0 +1,29 @@
+<html>
+    <body>
+        Num1:<input type="text" id="n1"/><br><br>
+        Num2:<input type="text" id="n2"/><br><br>
+        Num3:<input type="text" id="n3"/> <br><br>
+        <input type="button" value="ok" onclick="check();"/>
+        <br>result=<span id="j1"></span>
+    </body>
+    <script langauge="javascript">
+        function check()
+        {
+            var num1=document.getElementById("n1").value;
+            var num2=document.getElementById("n2").value;
+            var num3=document.getElementById("n3").value;
+            if(num1>num2 && num1>num3)
+            {
+                document.getElementById("j1").innerHTML="Num1 is greater than Num2&Num3"
+            }
+            else if(num2>num3)
+            {
+                document.getElementById("j1").innerHTML="Num2 is greater than both Num1&Num3"
+            }
+            else
+            {
+                document.getElementById("j1").innerHTML="Num3 is greater than Both Num1 & Num2"
+            }
+        }
+    </script>
+</html>

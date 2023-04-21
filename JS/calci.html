@@ -1,0 +1,206 @@
+<html>
+    <style>
+     td{text-align: center ;}    
+    </style>
+    <form name="f1" style="width:250;height:500;border:35px solid rgb(112, 18, 18);margin-left: 500px;">
+    <table width=100% align=center  >
+        <tr>
+            <td><input type=text name="t1" style="width:100%;height:50;padding:25px;"  /></td>
+        </tr>
+    </table>
+    <table width=100% align="center">
+        <tr>
+            <td><input type=button name="b1" value="1" style="padding:15px;" onclick="show1();" /></td>
+	        <td><input type=button name="b2" value="2" style="padding:15px;" onclick="show2();" /></td>
+	        <td><input type=button name="b3" value="3" style="padding:15px;" onclick="show3();" /></td>
+            <td><input type=button name="a1" value="+" style="padding:15px;" onclick="showplus();" /></td>
+        </tr>
+        <tr>
+            <td><input type=button name="b4" value="4" style="padding:15px;" onclick="show4();" /></td>
+	        <td><input type=button name="b5" value="5" style="padding:15px;" onclick="show5();" /></td>
+	        <td><input type=button name="b6" value="6" style="padding:15px;" onclick="show6();" /></td>
+            <td><input type=button name="a2" value="-" style="padding:15px;" onclick="showminus();" /></td>
+        </tr>
+        <tr>
+            <td><input type=button name="b7" value="7" style="padding:15px;" onclick="show7();" /></td>
+	        <td><input type=button name="b8" value="8" style="padding:15px;" onclick="show8();" /></td>
+	        <td><input type=button name="b9" value="9" style="padding:15px;" onclick="show9();" /></td>
+            <td><input type=button name="a3" value="*" style="padding:15px;" onclick="showmultiply();" /></td>
+        </tr>
+        <tr>
+            <td><input type=button name="a4" value="/" style="padding:15px;" onclick="showdivide();" /></td>
+	        <td><input type=button name="a5" value="0" style="padding:15px;" onclick="show0();" /></td>
+	        <td><input type=button name="a6" value="=" style="padding:15px;" onclick="showresult();" /></td>
+        </tr>
+    </table>
+    <script>
+        var prevnum=0;
+        var operator
+        function show1()
+                    {
+                        if(document.f1.t1.value == '+' || document.f1.t1.value == '-'|| document.f1.t1.value == '*'|| document.f1.t1.value == '/')
+                        {
+                        document.f1.t1.value="";
+                        document.f1.t1.value="1";
+                        }
+                        else
+                        {
+                        document.f1.t1.value=document.f1.t1.value + "1";
+                        }
+                    }
+            function show2()
+                    {
+                        if(document.f1.t1.value == '+' || document.f1.t1.value == '-'|| document.f1.t1.value == '*'|| document.f1.t1.value == '/')
+                        {
+                        document.f1.t1.value="";
+                        document.f1.t1.value="2";
+                        }
+                        else
+                        {
+                        document.f1.t1.value=document.f1.t1.value + "2";
+                        }
+                    }
+             function show3()
+                    {
+                        if(document.f1.t1.value == '+' || document.f1.t1.value == '-'|| document.f1.t1.value == '*'|| document.f1.t1.value == '/')
+                        {
+                        document.f1.t1.value="";
+                        document.f1.t1.value="3";
+                        }
+                        else
+                        {
+                        document.f1.t1.value=document.f1.t1.value + "3";
+                        }
+                    }  
+            function showplus()
+                    {
+                        prevnum=document.f1.t1.value;
+                        operator='+';
+                        document.f1.t1.value="+";
+	                }  
+            function show4()
+                    {
+                        if(document.f1.t1.value == '+' || document.f1.t1.value == '-'|| document.f1.t1.value == '*'|| document.f1.t1.value == '/')
+                        {
+                        document.f1.t1.value="";
+                        document.f1.t1.value="4";
+                        }
+                        else
+                        {
+                        document.f1.t1.value=document.f1.t1.value + "4";
+                        }
+                    } 
+            function show5()
+                    {
+                        if(document.f1.t1.value == '+' || document.f1.t1.value == '-'|| document.f1.t1.value == '*'|| document.f1.t1.value == '/')
+                        {
+                        document.f1.t1.value="";
+                        document.f1.t1.value="5";
+                        }
+                        else
+                        {
+                        document.f1.t1.value=document.f1.t1.value + "5";
+                        }
+                    } 
+            function show6()
+                    {
+                        if(document.f1.t1.value == '+' || document.f1.t1.value == '-'|| document.f1.t1.value == '*'|| document.f1.t1.value == '/')
+                        {
+                        document.f1.t1.value="";
+                        document.f1.t1.value="6";
+                        }
+                        else
+                        {
+                        document.f1.t1.value=document.f1.t1.value + "6";
+                        }
+                    } 
+            function showminus()
+                    {
+                        prevnum=document.f1.t1.value;
+                        operator='-';
+                        document.f1.t1.value="-";
+	                } 
+            function show7()
+                    {
+                        if(document.f1.t1.value == '+' || document.f1.t1.value == '-'|| document.f1.t1.value == '*'|| document.f1.t1.value == '/')
+                        {
+                        document.f1.t1.value="";
+                        document.f1.t1.value="7";
+                        }
+                        else
+                        {
+                        document.f1.t1.value=document.f1.t1.value + "7";
+                        }
+                    }
+                function show8()
+                    {
+                        if(document.f1.t1.value == '+' || document.f1.t1.value == '-'|| document.f1.t1.value == '*'|| document.f1.t1.value == '/')
+                        {
+                        document.f1.t1.value="";
+                        document.f1.t1.value="8";
+                        }
+                        else
+                        {
+                        document.f1.t1.value=document.f1.t1.value + "8";
+                        }
+                    }  
+                function show9()
+                    {
+                        if(document.f1.t1.value == '+' || document.f1.t1.value == '-'|| document.f1.t1.value == '*'|| document.f1.t1.value == '/')
+                        {
+                        document.f1.t1.value="";
+                        document.f1.t1.value="9";
+                        }
+                        else
+                        {
+                        document.f1.t1.value=document.f1.t1.value + "9";
+                        }
+                    }
+            function showmultiply()
+                    {
+                        prevnum=document.f1.t1.value;
+                        operator='*';
+                        document.f1.t1.value="*";
+	                } 
+            function showdivide()
+                    {
+                         prevnum=document.f1.t1.value;
+                        operator='/';
+                        document.f1.t1.value="/";
+	                }
+            function show0()
+                    {
+                        if(document.f1.t1.value == '+' || document.f1.t1.value == '-'|| document.f1.t1.value == '*'|| document.f1.t1.value == '/')
+                        {
+                        document.f1.t1.value="";
+                        document.f1.t1.value="0";
+                        }
+                        else
+                        {
+                        document.f1.t1.value=document.f1.t1.value + "0";
+                        }
+                    }
+            function showresult()
+                    {
+                        var result=0;
+                        if(operator=='+')
+                        {
+                        result=parseInt(prevnum) + parseInt(document.f1.t1.value);
+                        }
+                        else if(operator=='-')
+                        {
+                        result=parseInt(prevnum) - parseInt(document.f1.t1.value);
+                        }
+                        else if(operator=='*')
+                        {
+                        result=parseInt(prevnum) * parseInt(document.f1.t1.value);
+                        }
+                        else if(operator='/')
+                        {
+                        result=parseInt(prevnum) / parseInt(document.f1.t1.value);
+                        }
+                        document.f1.t1.value=result
+                    }
+    </script>
+    </form>
+</html>

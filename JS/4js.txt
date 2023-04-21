@@ -1,0 +1,9 @@
+<html>
+<script language="javascript">
+	var num;
+	Num1=10;
+	Num2=20;
+	document.write("Value of Num1 is"+Num1+"<br>")
+	document.write("Value of Num2 is"+Num2)
+</script>
+</html>

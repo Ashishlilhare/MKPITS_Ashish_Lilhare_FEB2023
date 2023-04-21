@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <form>
+            Num1<input type="text" id="a1"/><br><br>
+            Num2<input type="text" id="a2"/><br><br>
+            oprator<input type="text" id="op"/><br><br>
+            <input type="text" value="Result" onclick="check();"/> 
+        </form>
+    </body>
+    <script language="javascript">
+        function check()
+        {
+            var num1,num2,oprator,result;
+            num1=parseInt(document.getElementById("a1").value);
+            num2=parseInt(document.getElementById("a2").value);
+            oprator=document.getElementById("op").value;
+            switch (oprator)
+            {
+                case'+':
+                result=num1+num2;
+                break;
+                case'-':
+                result=num1-num2;
+                break;
+                case'*':
+                result=num1*num2;
+                break;
+                default:
+                    result="Invalid oprator";
+                    break;
+
+            }
+            alert("result is"+result )
+        }
+    </script>
+</html>

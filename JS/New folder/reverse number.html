@@ -1,0 +1,12 @@
+<html>
+    <h1>WAP to print reverse of a 3digit number<h1>
+    <script>
+        var num=123;
+        var digit1=num%10;
+        var digit2=Math.floor(num/10)%10;
+        var digit3=Math.floor(num/100);
+        var revnumber=(digit1*100)+(digit2*10)+(digit3);
+        //we can use both revnumber & this sequence also+digit1+digit2+digit3
+        document.write("revnumber is"+digit1+digit2+digit3)
+    </script>
+</html>

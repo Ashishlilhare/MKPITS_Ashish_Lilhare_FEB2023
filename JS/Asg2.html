@@ -1,0 +1,26 @@
+<html>
+<h1 align="center">CIRCLE OPRATION</h1> 
+<body > 
+	Radius:<input type="text" id="w1"/><br><br>
+	<input type="button"value="Area" onclick="Area();"/>
+	<input type="button"value="Circumference" onclick="Circumference();"/><br><br>
+	<span id="a1">Area:</span><br><br>
+	<span id="a2">Circumference:</span>
+</body>
+<script langauge="javascript">
+	function Area()
+	{
+	var num1,Area;
+	num1=parseInt(document.getElementById("w1").value);
+	Area=3.14*num1*num1
+	document.getElementById("a1").innerHTML="Area="+Area;
+	}
+	function Circumference()
+	{
+	var num1,Circumference;
+	num1=parseInt(document.getElementById("w1").value);
+	Circumference=3.14*2*num1
+	document.getElementById("a2").innerHTML="Circumference="+Circumference;
+	}
+</script>
+</html>

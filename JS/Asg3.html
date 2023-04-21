@@ -1,0 +1,26 @@
+<html>
+<h1 align="center"> MARKSHEET</h1>
+<body>
+	Maths :<input type="text" id="m1"/><br><br>
+	Physics   :<input type="text" id="m2"/><br><br>
+	Chemishtry:<input type="text" id="m3"/><br><br>
+	<input type="button" value="Result" onclick="Result();"/>
+	<br><span id="mm"> Total :</span>
+	<br><span id="mn"> Percentage :</span>
+</body>
+<script langauge="javascript">
+	function Result()
+	{
+	var num1,num2,num3,result;
+	num1=parseInt(document.getElementById("m1").value);
+	num2=parseInt(document.getElementById("m2").value);
+	num3=parseInt(document.getElementById("m3").value);
+	result=num1+num2+num3
+	Percentage=result/300*100	
+	document.getElementById("mm").innerHTML="Total="+result;
+	document.getElementById("mn").innerHTML="Percentage="+Percentage;
+
+	}
+
+</script>
+</html>

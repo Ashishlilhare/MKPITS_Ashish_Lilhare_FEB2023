@@ -1,0 +1,23 @@
+<html>
+    <h1>getting the alert message when user not put proper value </h1>
+    <body>
+        User name <input type="text" id="un"/> <br><br><br><br>
+        password<input type="text" id="up"/><br><br><br><br>
+        <input type="button" value="submit" Onclick="check();"/><br><br>
+    </body>
+    <script>
+        function check()
+        {
+            var user=document.getElementById("un").value;
+            var pwd=document.getElementById("up").value;
+            if(user=="" && pwd=="")
+            {
+                alert("Please enter your user name or password")
+            }
+            else
+            {
+                alert("welcome user "+user)    
+            }
+        }
+    </script>
+</html>

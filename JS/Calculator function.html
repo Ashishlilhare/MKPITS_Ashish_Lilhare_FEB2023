@@ -1,0 +1,52 @@
+<html>
+<title> CALCULATOR </title>
+<h1 align="center"> Calculation Function</h1>
+<hr>
+<body>
+	INPUT VALUE 1:<input type="text" id="a1"/><br><br>
+	INPUT VALUE 2:<input type="text" id="a2"/><br><br>
+	<input type="button" value="Addition" onclick="addNumber();"/>
+	<input type="button" value="Substraction" onclick="subNumber();"/>
+	<input type="button" value="Multiplication" onclick="multiNumber();"/>
+	<input type="button" value="Division" onclick="divideNumber();"/>
+	<br><br>
+	<span id="res1">addition:</span><br><br>
+	<span id="res2">Substraction:</span><br><br>
+	<span id="res3">Multiplication:</span><br><br>
+	<span id="res4">Division:</span><br><br>
+
+</body>
+<script language="javascript">
+	function addNumber()
+	{
+	var number1,number2,result;
+	number1=parseFloat(document.getElementById("a1").value);
+	number2=parseFloat(document.getElementById("a2").value);
+	result= number1+number2
+	document.getElementById("res1").innerHTML="Addition ="+result;
+	}
+	function subNumber()
+	{
+	var number1,number2,result;
+	number1=parseFloat(document.getElementById("a1").value);
+	number2=parseFloat(document.getElementById("a2").value);
+	result= number1-number2
+	document.getElementById("res2").innerHTML="Substraction ="+result;
+	}
+	function multiNumber()
+	{
+	var number1,number2,result;
+	number1=parseFloat(document.getElementById("a1").value);
+	number2=parseFloat(document.getElementById("a2").value);
+	result= number1*number2
+	document.getElementById("res3").innerHTML="Multiplication ="+result;
+	}
+	function divideNumber()
+	{
+	number1=parseFloat(document.getElementById("a1").value);
+	number2=parseFloat(document.getElementById("a2").value);
+	result=number1/number2
+	document.getElementById("res4").innerHTML="Division="+result;
+	}
+</script>
+</html>

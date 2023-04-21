@@ -1,0 +1,24 @@
+<html>
+    <h1 align="center">ODD/EVEN </h1>
+<hr>
+<br><br>
+    <body>
+        Number<input type="text" id="a1"/> <br><br><br>
+        <input type="button" value="odd/even" onclick="check();"/>
+    </body>
+<script langauge="javascript">
+    function check()
+    {
+        var num=document.getElementById("a1").value;
+        if(num%2==0)
+        {
+            alert("num is even");
+        }
+        else
+        {
+            alert("num is odd");
+        }
+
+    }
+</script>
+</html>

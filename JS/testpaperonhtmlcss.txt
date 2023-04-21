@@ -1,0 +1,116 @@
+html test question
+
+1- What does HTML stand for?
+
+2- What is the purpose of the <html> tag?
+
+3- How do you create a hyperlink in HTML?
+
+4- What is the purpose of the <img> tag?
+
+5- How do you create an ordered list in HTML?
+
+6 -What is the purpose of the <form> tag?
+
+7 -What is the purpose of the <input> tag?
+
+8- How do you add a background image to a webpage?
+
+9 -What is the purpose of the <div> tag?
+
+10- How do you create a table in HTML?
+
+11- What is the purpose of the <br> tag?
+
+12- What is the purpose of the <style> tag?
+
+13- How do you create a horizontal line in HTML?
+
+14- What is the purpose of the <textarea> tag?
+
+15- What is the purpose of the <select> tag?
+
+16- How do you create a button in HTML?
+
+
+question on css
+
+1- What does CSS stand for?
+
+2- What is the purpose of CSS?
+
+3- How do you link a CSS file to an HTML document?
+
+4- How do you create a background color in CSS?
+
+5- What is the purpose of the box model in CSS?
+
+6- How do you create a border around an element in CSS?
+
+7- What is the difference between inline and block elements in CSS?
+
+8- What is the purpose of the float property in CSS?
+
+9- What is the purpose of the z-index property in CSS?
+
+10- What is the purpose of the font-size property in CSS?
+
+11- What is the purpose of the transition property in CSS?
+
+------------------------------------
+practice question on html
+
+1- Create a basic HTML document with a title of "My First Webpage".
+
+2- Create a paragraph tag that contains the text "Hello, World!".
+
+3- Create a hyperlink that links to the website "https://www.google.com".
+
+4- Create an image tag that displays an image .
+
+5- Create an ordered list that contains three items: "Apples", "Bananas", and "Oranges".
+
+6- Create an unordered list that contains three items: "Red", "Green", and "Blue".
+
+7- Create a table with three columns and three rows.
+
+8- Create a form that contains a text input and a submit button.
+
+9- Create a div tag that contains an image and a paragraph of text.
+
+10-Create a horizontal line on the page.
+
+11-Add a background color to the body of the HTML document.
+
+12-Create a button that displays the text "Click me!"
+
+13-Create a text area .
+
+14-Create a select menu that contains three options: "Option 1", "Option 2", and "Option 3".
+
+15-Create a nested list that contains three items in the outer list and two items in each inner list.
+
+----------------------
+practice question on css
+
+1-Create a CSS style rule that changes the font color of a paragraph to red.
+
+2-Create a CSS style rule that changes the font family of a paragraph to Arial.
+
+3-Create a CSS style rule that changes the background color of an element to blue.
+
+4-Create a CSS style rule that adds a border around an element with a thickness of 1 pixel, a solid style, and a color of black.
+
+5-Create a CSS style rule that centers an element horizontally on the page.
+
+6-Create a CSS style rule that changes the font size of a heading to 24 pixels.
+
+7-Create a CSS style rule that changes the text alignment of a paragraph to center.
+
+8-Create a CSS style rule that sets the width of an element to 50% of the page width.
+
+9-Create a CSS style rule that changes the background color of an element when the mouse hovers over it.
+
+10-Create a CSS style rule that sets the height of an element to 200 pixels.
+
+11-Create a CSS style rule that changes the opacity of an element to 50%.

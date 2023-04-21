@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fire Game</title>
+    <style>
+      #canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fire Game</h1>
+    <p>Click on the canvas to extinguish the fire.</p>
+    <canvas id="canvas" width="400" height="400"></canvas>
+
+    <script>
+      // Get the canvas element and its context
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+
+      // Define a variable to keep track of the fire size
+      let fireSize = 200;
+
+      // Define a function to draw the fire
+      function drawFire() {
+        // Clear the canvas
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Draw the fire
+        ctx.beginPath();
+        ctx.arc(
+          canvas.width / 2,
+          canvas.height / 2,
+          fireSize,
+          0,
+          Math.PI * 2
+        );
+        ctx.fillStyle = "orange";
+        ctx.fill();
+
+        // Decrease the fire size
+        fireSize -= 1;
+
+        // Check if the fire is out
+        if (fireSize < 0) {
+          // Display a message to the user
+          ctx.font = "bold 30px Arial";
+          ctx.fillStyle = "red";
+          ctx.textAlign = "center";
+          ctx.fillText("You put out the fire!", canvas.width / 2, canvas.height / 2);
+        } else {
+          // Schedule the next frame
+          requestAnimationFrame(drawFire);
+        }
+      }
+
+      // Add an event listener to the canvas
+      canvas.addEventListener("click", function (event) {
+        // Get the position of the click relative to the canvas
+        const x = event.clientX - canvas.offsetLeft;
+        const y = event.clientY - canvas.offsetTop;
+
+        // Check if the click was inside the fire
+        if (
+          Math.sqrt((x - canvas.width / 2) ** 2 + (y - canvas.height / 2) ** 2) <
+          fireSize
+        ) {
+          // Extinguish the fire
+          fireSize = 0;
+        }
+      });
+
+      // Start the game
+      drawFire();
+    </script>
+  </body>
+</html>

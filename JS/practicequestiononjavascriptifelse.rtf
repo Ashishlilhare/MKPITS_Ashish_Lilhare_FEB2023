@@ -1,0 +1,216 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 Check if input variable is a number or not\par
+Function `isNumber()` checks if input variable is a number by using isNaN() in-built JavaScript function. Read more about isNan() from w3schools.com/jsref/jsref_isnan.asp.\par
+\par
+Print \ldblquote Variable is not a number\rdblquote  if isNaN() returns true.\par
+Else print \ldblquote Variable is a valid number\rdblquote  if isNaN() returns false.\par
+function isValidNumber(num) \{\par
+\par
+  if(isNaN(num))\{\par
+      console.log(`$\{num\} is not a number`)\par
+  \}\par
+  else\{\par
+    console.log(`$\{num\} is a valid number`)\par
+  \}\par
+\}\par
+\par
+isValidNumber(11) //"11 is a valid number"\par
+isValidNumber("19") //"19 is a valid number"\par
+isValidNumber("xyz") //"xyz is not a number"\par
+isValidNumber("17.5") //"17.5 is a valid number"\par
+isValidNumber("21F") //"21F is not a number" \par
+\par
+---------------------------------------\par
+Check if a triangle is equilateral, scalene, or isosceles\par
+Function `findTriangleType()` finds the type of the triangle for given side values by using \ldblquote ==\rdblquote  and \ldblquote &&\rdblquote  operator in JavaScript.\par
+\par
+Print \ldblquote Equilateral triangle.\rdblquote  if values for all side1, side2 and side3 are equal.\par
+Print \ldblquote Isosceles triangle.\rdblquote  if values for side1 is equal to side2 or side2 is equal to side3\par
+Else \ldblquote Scalene triangle.\rdblquote  since values of all sides are unequal.\par
+function findTriangleType(side1, side2, side3) \{\par
+\par
+  if((side1 == side2) && (side1 == side3))\{\par
+    console.log(`Equilateral triangle.`)\par
+  \}\par
+  else if ((side1 == side2) || (side2 == side3) || (side1 == side3))\{\par
+    console.log(`Isosceles triangle.`)\par
+  \}\par
+  else\{\par
+    console.log(`Scalene triangle.`)\par
+  \}\par
+\}\par
+\par
+findTriangleType(12,12,12) //"Equilateral triangle."\par
+findTriangleType(20,20,31) //"Isosceles triangle."\par
+findTriangleType(5,4,3) //"Scalene triangle."\par
+\par
+-----------------------------------\par
+Find the a number is present in given range\par
+Function `checkInRange()` finds if the given number is within the provided start and end range using >=, <= and && operators in JavaScript.\par
+\par
+Print \ldblquote Between the range\rdblquote  if num is between start and end values\par
+Else Print \ldblquote Outside the range\rdblquote  since num is outside start and end values.\par
+function checkInRange(num, start, end) \{\par
+\par
+  if(num >= start && num <= end)\{\par
+    console.log(`$\{num\} is between the range $\{start\} and $\{end\}`)\par
+  \}\par
+  else\{\par
+    console.log(`$\{num\} is outside the range $\{start\} and $\{end\}`)    \par
+  \}\par
+\}\par
+\par
+checkInRange(15,11,30) //"15 is between the range 11 and 30"\par
+checkInRange(20,34,51) //"20 is outside the range 34 and 51"\par
+\par
+-------------------------------------------------------------------------------\par
+ Perform arithmetic operations on two numbers\par
+Function `evalNumbers()` prints the result after evaluating arithmetic operations between two numbers of addition, multiplication, division, and modulus in JavaScript.\par
+\par
+Print result of num1+num2 if operation is \ldblquote add\rdblquote\par
+Print result of num1-num2 if operation is \ldblquote subtract\rdblquote\par
+Print result of num1*num2 if operation is \ldblquote multiply\rdblquote\par
+Print result of num1/num2 if operation is \ldblquote divide\rdblquote\par
+Print result of num1%num2 if operation is \ldblquote modulus\rdblquote\par
+Else print \ldblquote Invalid operation\rdblquote\par
+function evalNumbers(num1, num2, op) \{\par
+\par
+  if(op == "add")\{\par
+    console.log(`Sum of $\{num1\} and $\{num2\} is $\{num1+num2\}`)\par
+  \}\par
+  else if(op == "subtract")\{\par
+    console.log(`Difference of $\{num1\} and $\{num2\} is $\{num1-num2\}`)\par
+  \}\par
+  else if(op == "multiply")\{\par
+    console.log(`Product of $\{num1\} and $\{num2\} is $\{num1*num2\}`)\par
+  \}\par
+  else if(op == "divide")\{\par
+    console.log(`Division of $\{num1\} and $\{num2\} is $\{num1/num2\}`)\par
+  \}\par
+  else if(op == "modulus")\{\par
+    console.log(`Modulus of $\{num1\} and $\{num2\} is $\{num1%num2\}`)\par
+  \}\par
+  else\{\par
+     console.log(`$\{op\} is an invalid operation`)    \par
+  \}\par
+\}\par
+\par
+evalNumbers(15,10,"add") //"Sum of 15 and 10 is 25"\par
+evalNumbers(20,8,"subtract") //"Difference of 20 and 8 is 12"\par
+evalNumbers(12,4,"multiply") //"Product of 12 and 4 is 48"\par
+evalNumbers(28,7,"divide") //"Division of 28 and 7 is 4"\par
+evalNumbers(22,3,"modulus") //"Modulus of 22 and 3 is 1"\par
+evalNumbers(31,3,"square") //"square is an invalid operation"\par
+-----------------------------------------------------------------------------------------------\par
+Find check if a year is leap year or not\par
+Function `checkLeapYear()` find if the given year is a leap year or not by using %, !=, && and || operators in JavaScript.\par
+\par
+\par
+If year is divisble by 4 and not divisble by 100 then print \ldblquote leap year\rdblquote .\par
+Or if year is divisible by 400 then print \ldblquote leap year\rdblquote .\par
+Else print \ldblquote not a leap year\rdblquote .\par
+function checkLeapYear(year) \{\par
+\par
+  if(((year%4 == 0)&&(year%100 != 0))||(year%400 == 0))\{\par
+    console.log(`Year $\{year\} is a leap year`);\par
+  \}\par
+  else\{\par
+    console.log(`Year $\{year\} is not a leap year`);\par
+    \}\par
+ \}\par
+\par
+checkLeapYear(2012) //"Year 2012 is a leap year"\par
+checkLeapYear(1900) //"Year 1900 is not a leap year"\par
+checkLeapYear(2000) //"Year 2000 is a leap year"\par
+\par
+checkLeapYear(2011) //"Year 2011 is not a leap year"\par
+------------------------------------------------------------------------\par
+ Find the grade for input marks\par
+Function `findGrade()` to find the grade of the student based on the input marks.\par
+\par
+Print \ldblquote S grade\rdblquote  if marks is between 90 and 100.\par
+Print \ldblquote A grade\rdblquote  if marks is between 80 and 90.\par
+Print \ldblquote B grade\rdblquote  if marks is between 70 and 80.\par
+Print \ldblquote C grade\rdblquote  if marks is between 60 and 70.\par
+Print \ldblquote D grade\rdblquote  if marks is between 50 and 60.\par
+Print \ldblquote E grade\rdblquote  if marks is between 40 and 50.\par
+Print \ldblquote Student has failed\rdblquote  if marks is between 0 and 40.\par
+Else print \ldblquote Invalid marks\rdblquote .\par
+function findGrade(name, marks) \{\par
+\par
+  if(marks >= 90 && marks <= 100)\{\par
+    console.log(`$\{name\} you have received S grade`)\par
+  \}\par
+  else if(marks >= 80 && marks < 90)\{\par
+    console.log(`$\{name\} you have received A grade`)\par
+  \}\par
+  else if(marks >= 70 && marks < 80)\{\par
+    console.log(`$\{name\} you have received B grade`)\par
+  \}\par
+  else if(marks >= 60 && marks < 70)\{\par
+    console.log(`$\{name\} you have received C grade`)\par
+  \}\par
+  else if(marks >= 50 && marks < 60)\{\par
+    console.log(`$\{name\} you have received D grade`)\par
+  \}\par
+  else if(marks >= 40 && marks < 50)\{\par
+    console.log(`$\{name\} you have received E grade`)\par
+  \}\par
+  else if(marks >= 0 && marks <40)\{\par
+    console.log(`$\{name\} you have Failed`)\par
+  \}\par
+  else\{\par
+    console.log(`Invalid marks of $\{marks\}`)\par
+  \}\par
+\}\par
+\par
+findGrade("John Doe", 91) //"John Doe you have received S grade"\par
+findGrade("John Doe", 85) //"John Doe you have received A grade"\par
+findGrade("John Doe", 73) //"John Doe you have received B grade"\par
+findGrade("John Doe", 53) //"John Doe you have received D grade"\par
+findGrade("John Doe", 20) //"John Doe you have Failed"\par
+findGrade("John Doe", 120) //"Invalid marks of 120"\par
+-----------------------------------------------------------------\par
+ Find number of days in a given month\par
+Function `findDaysInMonth()` finds the number of days in a given month of a year.\par
+\par
+\par
+If month is outside the range of 1 and 12 print \ldblquote Invalid month\rdblquote .\par
+If month is equal to 2 ie, February print \ldblquote 29 days\rdblquote  if leap year else print \ldblquote 28 days\rdblquote  .\par
+Else if month is equal to 4, 6, 9 or 11 print \ldblquote 30 days\rdblquote .\par
+Else print \ldblquote 31 days\rdblquote .\par
+function isLeapYear(year)\{\par
+\par
+  return (((year%4 == 0)&&(year%100 != 0))||(year%400 == 0));\par
+\}\par
+\par
+function findDaysInMonth(month, year) \{\par
+\par
+  if(month < 1 || month > 12)\{\par
+    console.log(`Invalid Month of value $\{month\}`)\par
+    return;\par
+  \}\par
+\par
+  if(month ==2)\{\par
+    if(isLeapYear(year))\{\par
+       console.log(`The Month has 29 days`)    \par
+    \}\par
+    else\{\par
+       console.log(`The Month has 28 days`)    \par
+    \}\par
+  \}\par
+  else if(month == 4 || month == 6 || month == 9 || month== 11)\{\par
+     console.log(`The Month has 30 days`)    \par
+  \}\par
+  else\{\par
+     console.log(`The Month has 31 days`)\par
+  \}\par
+\}\par
+\par
+findDaysInMonth(2, 2012) //"The Month has 29 days"\par
+findDaysInMonth(2, 2013) //"The Month has 28 days"\par
+findDaysInMonth(4, 2012) //"The Month has 30 days'\par
+findDaysInMonth(10, 2013) //"The Month has 31 days"\par
+}
+ 

@@ -1,0 +1,22 @@
+<html>
+    <h1>do while loop</h1>
+   <hr>
+   <body>
+        Enter num<input type="text" id="a1" /><br><br>
+        <input type="button" value="Fact" onclick="fact();"/>
+   </body>
+   <script>
+    function fact()
+    {
+        var num=parseInt(document.getElementById("a1").value);
+        var fact=1;
+        do
+        {
+            fact=fact*num;
+            num=num-1;
+            }
+        while(num>0)
+        document.write("foctorial is"+ fact);
+    }
+    </script>
+</html>

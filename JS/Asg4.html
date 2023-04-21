@@ -1,0 +1,20 @@
+<html>
+<h1 align="center">Inventry Calculator</h1> 
+<body > 
+	Product name:<input type="text" id="u0"/><br><br>
+	Rate:<input type="text" id="u1"/><br><br>
+	Quantity:<input type="text" id="u2"/><br><br>
+	<input type="button"value="Ok" onclick="OK();"/>
+	<br><br><span id="a1">Total amount:</span>
+</body>
+<script langauge="javascript">
+	function OK()
+	{
+	var num1,num2,result;
+	num1=parseInt(document.getElementById("u1").value);
+	num2=parseInt(document.getElementById("u2").value);
+	result=num1*num2
+	document.getElementById("a1").innerHTML="Total amount="+result;
+	}
+</script>
+</html>

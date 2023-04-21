@@ -1,0 +1,21 @@
+<html>
+    <body>
+        Enter number<input type="text" id="g1"/><br><br>
+        <input type="button" value="table" onclick="printtable();"/>
+    </body>
+    <script>
+        function printtable()
+        {
+            var result=1;
+            var counter=1;
+            var num=parseInt(document.getElementById("g1").value);
+            while(counter<=10)
+            {
+                result=num*counter;
+                document.write(num+"*"+counter+"="+result+"<br>");
+                
+                counter=counter+1;
+            }
+        }
+    </script>
+</html> 
