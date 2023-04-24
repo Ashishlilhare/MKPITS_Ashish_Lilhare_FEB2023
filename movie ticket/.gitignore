@@ -1,6 +1,5 @@
-vs/
-bin/
-obj/
-Properties/
+/bin/
+/obj/
+/Properties/
 *.config
 *.resx
