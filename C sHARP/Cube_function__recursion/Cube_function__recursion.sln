@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cube_function__recursion", "Cube_function__recursion\Cube_function__recursion.csproj", "{F4DE2408-A2D3-4F3F-B871-3B06DEB3B5B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4DE2408-A2D3-4F3F-B871-3B06DEB3B5B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4DE2408-A2D3-4F3F-B871-3B06DEB3B5B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4DE2408-A2D3-4F3F-B871-3B06DEB3B5B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4DE2408-A2D3-4F3F-B871-3B06DEB3B5B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43F853C4-FBA2-4FA3-82B0-BA80958061DD}
+	EndGlobalSection
+EndGlobal
