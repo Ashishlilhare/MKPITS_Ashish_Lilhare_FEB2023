@@ -1,8 +1,0 @@
-E:\DOTNET\factorial function (recursion)\factorial function (recursion)\obj\Debug\factorial function (recursion).csproj.AssemblyReference.cache
-E:\DOTNET\factorial function (recursion)\factorial function (recursion)\obj\Debug\factorial function (recursion).csproj.SuggestedBindingRedirects.cache
-E:\DOTNET\factorial function (recursion)\factorial function (recursion)\obj\Debug\factorial function (recursion).csproj.CoreCompileInputs.cache
-E:\DOTNET\factorial function (recursion)\factorial function (recursion)\bin\Debug\factorial function (recursion).exe.config
-E:\DOTNET\factorial function (recursion)\factorial function (recursion)\bin\Debug\factorial function (recursion).exe
-E:\DOTNET\factorial function (recursion)\factorial function (recursion)\bin\Debug\factorial function (recursion).pdb
-E:\DOTNET\factorial function (recursion)\factorial function (recursion)\obj\Debug\factorial function (recursion).exe
-E:\DOTNET\factorial function (recursion)\factorial function (recursion)\obj\Debug\factorial function (recursion).pdb

@@ -1,8 +1,0 @@
-E:\DOTNET\hierarchical inheritance -1\hierarchical inheritance -1\bin\Debug\hierarchical inheritance -1.exe.config
-E:\DOTNET\hierarchical inheritance -1\hierarchical inheritance -1\bin\Debug\hierarchical inheritance -1.exe
-E:\DOTNET\hierarchical inheritance -1\hierarchical inheritance -1\bin\Debug\hierarchical inheritance -1.pdb
-E:\DOTNET\hierarchical inheritance -1\hierarchical inheritance -1\obj\Debug\hierarchical inheritance -1.csproj.AssemblyReference.cache
-E:\DOTNET\hierarchical inheritance -1\hierarchical inheritance -1\obj\Debug\hierarchical inheritance -1.csproj.SuggestedBindingRedirects.cache
-E:\DOTNET\hierarchical inheritance -1\hierarchical inheritance -1\obj\Debug\hierarchical inheritance -1.csproj.CoreCompileInputs.cache
-E:\DOTNET\hierarchical inheritance -1\hierarchical inheritance -1\obj\Debug\hierarchical inheritance -1.exe
-E:\DOTNET\hierarchical inheritance -1\hierarchical inheritance -1\obj\Debug\hierarchical inheritance -1.pdb

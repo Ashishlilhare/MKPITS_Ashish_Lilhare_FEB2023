@@ -1,8 +1,0 @@
-E:\DOTNET\Double Dimesional array\Double Dimesional array\bin\Debug\Double Dimesional array.exe.config
-E:\DOTNET\Double Dimesional array\Double Dimesional array\bin\Debug\Double Dimesional array.exe
-E:\DOTNET\Double Dimesional array\Double Dimesional array\bin\Debug\Double Dimesional array.pdb
-E:\DOTNET\Double Dimesional array\Double Dimesional array\obj\Debug\Double Dimesional array.csproj.AssemblyReference.cache
-E:\DOTNET\Double Dimesional array\Double Dimesional array\obj\Debug\Double Dimesional array.csproj.SuggestedBindingRedirects.cache
-E:\DOTNET\Double Dimesional array\Double Dimesional array\obj\Debug\Double Dimesional array.csproj.CoreCompileInputs.cache
-E:\DOTNET\Double Dimesional array\Double Dimesional array\obj\Debug\Double Dimesional array.exe
-E:\DOTNET\Double Dimesional array\Double Dimesional array\obj\Debug\Double Dimesional array.pdb

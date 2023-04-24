@@ -1,5 +1,5 @@
-/obj
-/bin
-/Properties
+Properties
+obj
+bin
 *.config
 *.resx
