@@ -139,11 +139,11 @@ namespace WindowsFormsApp1
             Movie_Ticket mt = null;
             if (radioButton1.Checked)
             {
-                mt = new Online_Booking(comboBox1.Text,comboBox2.Text,comboBox3.Text,Convert.ToInt32(numericUpDown1), Convert.ToSingle(textBox1.Text));
+                mt = new Online_Booking(comboBox1.Text,comboBox2.Text,comboBox3.Text,Convert.ToInt32(numericUpDown1.Value), Convert.ToSingle(textBox1.Text));
             }
             else if (radioButton2.Checked) 
             {
-                mt=new BoxOffice(comboBox1.Text,comboBox2.Text,comboBox3.Text,Convert.ToInt32(numericUpDown1), Convert.ToSingle(textBox1));
+                mt=new BoxOffice(comboBox1.Text,comboBox2.Text,comboBox3.Text,Convert.ToInt32(numericUpDown1.Value), Convert.ToSingle(textBox1.Text));
             }
             label7.Text=mt.Calculate_Ticket_Price();
         }

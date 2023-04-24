@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
         public string Theater_Name { get; set; }
         public string Show_Time { get; set; }
         public float No_of_Seat { get; set; }
-        public int Ticket_Price { get; set; }
+        public float Ticket_Price { get; set; }
 
         public abstract string Calculate_Ticket_Price();
 
@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
 
     class Online_Booking : Movie_Ticket
     {
-       public Online_Booking(string Movie_Name, string Theater_Name, string Show_Time, float No_of_Seat, int Ticket_Price)
+       public Online_Booking(string Movie_Name, string Theater_Name, string Show_Time, float No_of_Seat, float Ticket_Price)
         {
             this.Movie_Name = Movie_Name;
             this.Theater_Name= Theater_Name;
@@ -32,15 +32,15 @@ namespace WindowsFormsApp1
         public float discount { get; set; }
         public override string Calculate_Ticket_Price()
         {
-            discount = 0.2f;
-            float tp = No_of_Seat * Ticket_Price-discount ;
-         
+            float tp = No_of_Seat * Ticket_Price ;
+            discount = tp*0.20f;
+            tp = tp - discount;
             return "Total Price =" + tp.ToString();
         }
     }
     class BoxOffice : Movie_Ticket
     {
-        public BoxOffice(string Movie_Name, string Theater_Name, string Show_Time, float No_of_Seat, int Ticket_Price)
+        public BoxOffice(string Movie_Name, string Theater_Name, string Show_Time, float No_of_Seat, float Ticket_Price)
         {
             this.Movie_Name = Movie_Name;
             this.Theater_Name = Theater_Name;
