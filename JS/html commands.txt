@@ -1,0 +1,45 @@
+<h1 align=center > = for align
+<title> used to give title
+html heading tags 
+h1 to h6 
+<hr> used for creating horizontal line
+<p> it is for creating paragraph 
+<b> for bold
+<u> underline
+<i> italic
+--------------------------
+list tags
+<ol> order list 
+	<li> for listing
+unordered listing
+<ul type=disc >
+<ul type=circle >
+<ul type=square >
+<marquee > used for creating scrolling text
+<body bgcolor="lightgreen"> for background color
+<font color=red size=5 > for font colur AND SIZE
+-----------------------------------------------
+The HTML style attribute has the following syntax:
+<tagname style="property:value;">
+eg <p style="color : red; ">some text </p>
+--------------------------------------------
+Use the style attribute for styling HTML elements
+    Use background-color for background color
+    Use color for text colors
+    Use font-family for text fonts
+    Use font-size for text sizes
+    Use text-align for text alignment
+HTML Text Formatting Elements
+Tag 	Description
+<b> 	Defines bold text
+<em> 	Defines emphasized text 
+<small> 	Defines smaller text
+<strong> 	Defines important text
+<sub> 	Defines subscripted text 
+<sup> 	Defines superscripted text
+<ins> 	Defines inserted text
+<del> 	Defines deleted text
+<mark> 	Defines marked/highlighted text
+<!-- Write your comments here  -->
+The HTML <a> tag defines a hyperlink. It has the following syntax:
+<a href="url">link text</a>
