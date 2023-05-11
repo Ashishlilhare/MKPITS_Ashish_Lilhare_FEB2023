@@ -14,3 +14,11 @@ select * from orders1 where  orddate between '2022-5-1' and
 
 select * from orders1 
   where orddate between '2022-01-01' and '2022-01-10'
+  --STORED PROCESS SAVING THIS PROCESS IN PRODS1 AND EXICUTING BY exec prods1
+CREATE PROCEDURE prodS1
+as 
+begin
+select * from orders1
+end;
+
+exec prodS1
