@@ -144,4 +144,12 @@ SELECT b.*, a.cust_name
 FROM orders b, customer a
 WHERE a.customer_id=b.customer_id
 AND b.ord_date='2012-08-17';
- 
+ ------------------11th---------------
+ SELECT salesman_id,name 
+FROM salesman a 
+WHERE 1 < 
+    (SELECT COUNT(*) 
+     FROM customer 
+     WHERE salesman_id=a.salesman_id);
+
+ ------------------121th---------------
