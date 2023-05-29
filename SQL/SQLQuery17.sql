@@ -1,0 +1,9 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [Product_GST_ID]
+      ,[Gst_Detail_Name]
+      ,[CGST]
+      ,[SGST]
+      ,[IGST]
+  FROM [FendhalDb].[dbo].[TableProductGSTDetails]
+
+    select a.CGST,a.SGST,a.igst from tableproductGSTDetails a inner join TableProductCategory b on a.product_gst_id=b.product_gst_id where b.product_type_name='computers'

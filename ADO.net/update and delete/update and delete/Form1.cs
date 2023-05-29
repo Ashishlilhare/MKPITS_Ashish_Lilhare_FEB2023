@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace update_and_delete
 {
@@ -15,6 +16,36 @@ namespace update_and_delete
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            label3.Text = DataConnection.UpdateUser(textBox1.Text,textBox2.Text);
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox1.Focus();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label3.Text = DataConnection.InsertRecord(textBox1.Text,textBox2.Text);
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox1.Focus();
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            label3.Text=DataConnection.DeleteUsers(textBox1.Text);
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox1.Focus();
         }
     }
 }
