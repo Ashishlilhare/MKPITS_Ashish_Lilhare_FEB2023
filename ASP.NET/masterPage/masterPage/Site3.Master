@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="masterPage.Site3" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+        .newStyle1 {
+            font-family: Jokerman;
+            font-size: xx-large;
+        }
+        .newStyle2 {
+            font-family: symbol;
+        }
+        .newStyle3 {
+            font-family: Jokerman;
+            font-size: x-large;
+        }
+        .auto-style2 {
+            text-align: center;
+            background-color: #CC33FF;
+        }
+        .newStyle4 {
+            font-family: jokerman;
+        }
+        .newStyle5 {
+            font-size: x-large;
+        }
+        .newStyle6 {
+            font-family: jokerman;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="auto-style2">
+            <strong class="newStyle1">56 IT solution
+            <br />
+            😎😎😎😎😎😎Mankapur Nagpur 😎😎😎😎😎😎<span class="newStyle2"><br />
+            <br />
+            </span>
+            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="home.aspx">Home</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="about.aspx">about</asp:HyperLink>
+            </strong><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink3" runat="server" CssClass="newStyle6" NavigateUrl="contact.aspx">Contact</asp:HyperLink>
+            </strong>
+        </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    </form>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p class="auto-style1">
+        <span class="newStyle3"><strong>To swagat hai apka kaise hai aplog</strong></span></p>
+</body>
+</html>
