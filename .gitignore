@@ -1,6 +1,3 @@
-*.config
-*.resx
-Properties/
 obj/
 bin/
 .vs/
