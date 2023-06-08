@@ -1,0 +1,40 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Admissionform
+{
+    public static class productstore
+    {
+        private static string connectionString = "server=.\\SQLEXPRESS;integrated security=true;database=country_data";
+
+        public static SqlConnection GetConnection()
+        {
+            SqlConnection conn = new SqlConnection(connectionString);
+            try
+            {
+               // conn.Open();
+                return conn;
+            }
+            catch (Exception ee)
+            {
+                return null;
+            }
+        }
+        //creating method to to get country name 
+        public static DataSet GetTableCountry()
+        {
+            SqlConnection conn = GetConnection();
+            string query = "Select country from sheet1$";
+            DataSet ds = new DataSet();
+            SqlDataAdapter da = new SqlDataAdapter(query, conn);
+            da.Fill(ds, "Sheet1$");
+            return ds;
+        }
+        
+    }
+}
