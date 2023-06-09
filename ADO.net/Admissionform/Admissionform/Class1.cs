@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Admissionform
 {
-    public static class productstore
+    public static class Admissiondata
     {
         private static string connectionString = "server=.\\SQLEXPRESS;integrated security=true;database=country_data";
 
@@ -35,6 +35,8 @@ namespace Admissionform
             da.Fill(ds, "Sheet1$");
             return ds;
         }
-        
+        public static DataSet GetTablestate()
+        { }
+
     }
 }

@@ -19,7 +19,7 @@ namespace Admissionform
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            DataSet ds = productstore.GetTableCountry();
+            DataSet ds = Admissiondata.GetTableCountry();
             comboBox1.DataSource = ds.Tables[0];
             comboBox1.DisplayMember = "country";
             comboBox1.ValueMember = "country";
