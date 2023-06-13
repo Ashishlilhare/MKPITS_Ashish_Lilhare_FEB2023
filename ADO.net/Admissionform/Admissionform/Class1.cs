@@ -35,8 +35,25 @@ namespace Admissionform
             da.Fill(ds, "Sheet1$");
             return ds;
         }
-        public static DataSet GetTablestate()
-        { }
-
+        public static DataSet GetTablestate(string country)
+        {
+            SqlConnection conn =GetConnection();
+            string query = "  select admin_name from sheet1$ where country=@country";
+            DataSet ds = new DataSet();
+            SqlDataAdapter da = new SqlDataAdapter(query, conn);
+            da.SelectCommand.Parameters.AddWithValue("@country", country);
+            da.Fill(ds, "sheet1$");
+            return ds;
+        }
+        public static DataSet GetTableCity(string admin_name)
+        {
+            SqlConnection conn = GetConnection();
+            string query = "  select city from sheet1$ where admin_name=@admin_name";
+            DataSet ds = new DataSet();
+            SqlDataAdapter da = new SqlDataAdapter(query, conn);
+            da.SelectCommand.Parameters.AddWithValue("@admin_name", admin_name);
+            da.Fill(ds, "sheet1$");
+            return ds;
+        }
     }
 }

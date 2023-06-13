@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Admissionform
 {
@@ -25,5 +26,18 @@ namespace Admissionform
             comboBox1.ValueMember = "country";
         }
 
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataSet ds1 =Admissiondata.GetTableCity(comboBox2.Text);
+            comboBox3.DataSource = ds1.Tables[0];
+            comboBox3.DisplayMember= "city";
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataSet ds1 = Admissiondata.GetTablestate(comboBox1.Text);
+            comboBox2.DataSource = ds1.Tables[0];
+            comboBox2.DisplayMember = "admin_name";
+        }
     }
 }
