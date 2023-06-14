@@ -27,7 +27,10 @@
             <br />
             <br />
             <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="insert " />
-            &nbsp;<br />
+            &nbsp;<asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Update" />
+            <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Delete" />
+            <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="search" />
+            <br />
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
             <br />
         </div>
