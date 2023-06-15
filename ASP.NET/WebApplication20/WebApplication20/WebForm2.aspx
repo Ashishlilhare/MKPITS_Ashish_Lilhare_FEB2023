@@ -1,10 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="WebApplication20.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <p>
-    transaction form</p>
+    <p class="text-center">
+        <strong>Transaction form</strong></p>
 <p>
     &nbsp;</p>
-<p>
+<p class="text-center">
     <asp:RadioButton ID="RadioButton1" runat="server" Checked="True" Text="issue" AutoPostBack="True" GroupName="mode" OnCheckedChanged="RadioButton1_CheckedChanged" />
     <asp:RadioButton ID="RadioButton2" runat="server" Text="purchase" AutoPostBack="True" GroupName="mode" OnCheckedChanged="RadioButton2_CheckedChanged" />
 </p>

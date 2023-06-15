@@ -41,6 +41,7 @@ namespace WebApplication20
             con.Close();
             Label1.Text = "record added successfully";
             TextBox7.Text = "";
+
             TextBox7.Focus();
             loaddata();
         }
