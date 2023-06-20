@@ -11,8 +11,9 @@
     CreatedOn<asp:TextBox ID="TextBox3" runat="server" TextMode="Date"></asp:TextBox>
     <br />
     <asp:Button ID="Button1" runat="server" Text="Add" OnClick="Button1_Click" />
-    <asp:Button ID="Button2" runat="server" Text="Edit" OnClick="Button2_Click" />
-    <asp:Button ID="Button3" runat="server" Text="Delete" OnClick="Button3_Click" />
+   
+    <asp:Button ID="Button2" runat="server" Text="Edit" />
+   
     <br />
     <br />
     <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>

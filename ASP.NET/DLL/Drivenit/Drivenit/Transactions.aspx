@@ -2,6 +2,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <p class="text-center">
     <strong>Transactions form</strong></p>
+    <table class="w-100">
+        <tr>
+            <td style="width: 179px">Trans ID</td>
+            <td>
+                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+    </table>
 <table class="w-100">
     <tr>
         <td style="width: 176px">Item ID</td>
@@ -40,6 +48,7 @@
     <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
 </p>
     <p>
+        <div class="text-center">
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="TransID" DataSourceID="SqlDataSource2" Width="777px" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
@@ -59,6 +68,7 @@
             <SortedDescendingCellStyle BackColor="#CAC9C9" />
             <SortedDescendingHeaderStyle BackColor="#00547E" />
         </asp:GridView>
+        </div>
         <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DrivenitDBConnectionString2 %>" DeleteCommand="DELETE FROM [Transactions] WHERE [TransID] = @TransID" InsertCommand="INSERT INTO [Transactions] ([ItemID], [TransType], [TransQty], [TransDate]) VALUES (@ItemID, @TransType, @TransQty, @TransDate)" ProviderName="<%$ ConnectionStrings:DrivenitDBConnectionString2.ProviderName %>" SelectCommand="SELECT [TransID], [ItemID], [TransType], [TransQty], [TransDate] FROM [Transactions]" UpdateCommand="UPDATE [Transactions] SET [ItemID] = @ItemID, [TransType] = @TransType, [TransQty] = @TransQty, [TransDate] = @TransDate WHERE [TransID] = @TransID">
             <DeleteParameters>
                 <asp:Parameter Name="TransID" Type="Int32" />
