@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<h2>Student Info</h2>
+@{
+    string Username = "prachi";
+    int sub1 = 90;
+    int sub2 = 30;
+    int sub3 = 88;
+    int total = sub1 + sub2 + sub3;
+    float per = (float)(total / 300.0f) * 100.0f;
+
+
+}
+
+<p>Student Name : @Username</p>
+<p>Student Marks : @total</p>
+<p>Student Percentage : @per</p>
+@{
+    string grade = "first";
+    <p>Student grade : @grade</p>
+}
+<p>@@Username</p>
+
+<p>@DateTime.Now</p>
+<p>@DateTime.IsLeapYear(2016)</p>
+
+@{
+    var ashish = new person("ashish", 23, 7841824 , "nagpur", "india");
+}
+
+<p>Name :- @(ashish.Name)</p>
+<p>Age :- @(ashish.Age)</p>
+<p>mobile number :- @(ashish.Mobile_no)</p>
+<p>city :- @(ashish.City)</p>
+<p>Country :- @(ashish.Country)</p>
+
+
+
+

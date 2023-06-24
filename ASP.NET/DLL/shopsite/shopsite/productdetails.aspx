@@ -24,9 +24,9 @@
                              </tr>
                              <tr align="center">
                                 <td>
-                                    <a style="border=1;color:white;text-decoration:none; padding:10px;border-radius:10px;background-color:green;" href="add.aspx" >Add To Cart</a>
+                                    <a style="border=1;color:white;text-decoration:none; padding:10px;border-radius:10px;background-color:green;" href="cart.aspx" >Add To Cart</a>
                                     &nbsp;&nbsp;
- <a style="border=1;color:white;text-decoration:none; padding:10px;border-radius:10px;background-color:green;" href="cart.aspx" >Buy Now</a>
+                                    <a style="border=1;color:white;text-decoration:none; padding:10px;border-radius:10px;background-color:green;" href="cart.aspx" >Buy Now</a>
                                 </td>
                                
                              </tr>
