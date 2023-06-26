@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+@model textboxexample.Models.Usermodel
+@using (Html.BeginForm("Index", "Home", FormMethod.Post)) 
+{
+
+    <b>Name</b>
+
+@Html.TextBoxFor(m=>m.Name, new{@Value="enter name",@class="red"})
+<br ></br >
+<input type="submit" value="ok">
+}
+<style>.red{color:aqua}</style>
+    <h1>User detail</h1>
+    Name=@ViewBag.username

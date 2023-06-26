@@ -1,0 +1,20 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model textboxexample.Models.Signup
+<h1> Signup Page</h1>
+@using (Html.BeginForm("Index1", "Signup", FormMethod.Post))
+{
+    <b>Enter Username :</b>
+    @Html.TextBoxFor(m=>m.password)
+    @Html.TextBoxFor(m=>m.Email)
+    <br /><br />
+    <input type ="submit" value="ok">
+}
+
+<h1>signup info</h1>
+username = ViewBag.username<br /><br />
+password = ViewBag.password<br /><br />
+Email = ViewBag.Email<br /><br />
