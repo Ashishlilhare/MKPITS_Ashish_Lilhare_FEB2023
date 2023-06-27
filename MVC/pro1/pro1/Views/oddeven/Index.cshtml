@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model pro1.Models.oddeven
+<h1>ODDEVEN FUNCTION</h1>
+@using (Html.BeginForm("Index","oddeven", FormMethod.Post))
+{
+    <b>Enter number</b>
+    @Html.TextBoxFor(m=>m.num)
+    <br />
+    <br />
+    <input type="submit" value="ok">
+}
+<h1>Reuslt = @ViewBag.result</h1>

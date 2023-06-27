@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model pro6.Models.SignUp
+@using (Html.BeginForm("Index", "SignUp", FormMethod.Post))
+{
+    <h2>enter signup details</h2>
+    <br />
+    <span>username :</span> @Html.TextBoxFor(m=>m.username)
+    <br />
+    <span>password :</span> @Html.PasswordFor(m=>m.password)
+    <br />
+    <span>Email :</span> @Html.TextBoxFor(m=>m.email)
+    <br />
+    <span>Male: </span> @Html.RadioButtonFor(m=>m.gender,"male")
+    <span>|Female: </span> @Html.RadioButtonFor(m=>m.gender,"female")
+    <br />
+    <span>subject1: </span> @Html.CheckBoxFor(m=>m.subject1,true)
+    <span> | subject2: </span> @Html.CheckBoxFor(m => m.subject2,false)
+
+
+    <br />
+    <input type="submit" value="ok" />
+}
+<hr />
+<h1>signup details</h1>
+Username : @ViewBag.username
+<br />
+password : @ViewBag.password
+<br />
+email : @ViewBag.email
+<br />
+gender : @ViewBag.gender
+<br />
+subject1 : @ViewBag.subject1
+<br />
+subject2 : @ViewBag.subject2
+<br />
+<br />

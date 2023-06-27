@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@model pro5.Models.caltype
+@using (Html.BeginForm("Index","Home",FormMethod.Post))
+{
+    <span>Enter Number1</span> @Html.TextBoxFor(m=>m.number1) 
+    <br />
+    <span>Enter Number2</span> @Html.TextBoxFor(m=>m.number2)
+    <br />
+    <span> add</span> @Html.RadioButtonFor(m=>m.cal,"add")
+    <br />
+    <span> Substract</span> @Html.RadioButtonFor(m=>m.cal,"sub")
+    <br />
+    <span> Multiply</span> @Html.RadioButtonFor(m=>m.cal,"multi")
+    <br />
+    <input type="submit" value="ok">
+
+
+}
+<h4>Result</h4>
+<span>Result :</span>@ViewBag.res

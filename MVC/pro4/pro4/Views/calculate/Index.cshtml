@@ -1,0 +1,29 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model pro4.Models.calculate
+@using (Html.BeginForm("Index","calculate",FormMethod.Post))
+{
+    <h1> calculator</h1>
+    <span>Enter number 1</span> @Html.TextBoxFor(m=>m.num1)
+    <br />
+    <span>Enter number 2</span> @Html.TextBoxFor(m=>m.num2)
+    <br />
+    <span> Add</span> @Html.CheckBoxFor(m=>m.add,true)
+    <span> || Substarct</span> @Html.CheckBoxFor(m=>m.substract,false)
+    <span> || Multiply</span> @Html.CheckBoxFor(m=>m.multiply,false)
+    <br />
+     <input type="submit" value="ok"/><br />
+
+
+}
+<h3>
+    Result
+</h3>
+<b>addition :</b>@ViewBag.result1
+<br />
+<b>substraction :</b>@ViewBag.result2
+<br />
+<b>Multiplication :</b>@ViewBag.result3
