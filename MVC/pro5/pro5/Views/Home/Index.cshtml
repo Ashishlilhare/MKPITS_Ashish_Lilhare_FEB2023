@@ -10,6 +10,9 @@
 @model pro5.Models.caltype
 @using (Html.BeginForm("Index","Home",FormMethod.Post))
 {
+    
+
+    <br />
     <span>Enter Number1</span> @Html.TextBoxFor(m=>m.number1) 
     <br />
     <span>Enter Number2</span> @Html.TextBoxFor(m=>m.number2)
@@ -21,8 +24,19 @@
     <span> Multiply</span> @Html.RadioButtonFor(m=>m.cal,"multi")
     <br />
     <input type="submit" value="ok">
+    <h1>Html.ActionLink Example</h1>
+
+   
+
+    
 
 
 }
 <h4>Result</h4>
 <span>Result :</span>@ViewBag.res
+
+<br />
+<!-- Redirect in Same Controller -->
+@Html.ActionLink("Contact Page","Contact")
+<!-- Redirect in Another Controller -->
+@Html.ActionLink("Report Page","Index","Report")
