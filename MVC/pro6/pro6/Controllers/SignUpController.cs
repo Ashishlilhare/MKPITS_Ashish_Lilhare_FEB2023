@@ -27,6 +27,9 @@ namespace pro6.Controllers
                 ViewBag.subject2 = "java";
             }
 
+            var ct = u.getcity;
+            ViewBag.city = ct.ToString();
+
 
 
             return View();

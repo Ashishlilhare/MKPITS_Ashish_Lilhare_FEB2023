@@ -19,7 +19,9 @@
     <br />
     <span>subject1: </span> @Html.CheckBoxFor(m=>m.subject1,true)
     <span> | subject2: </span> @Html.CheckBoxFor(m => m.subject2,false)
-
+    <br />
+    <span>City ;</span> @Html.DropDownListFor(m=>m.getcity,new SelectList(Enum.GetValues(typeof(city))),"----Select Country---")
+    <br />
 
     <br />
     <input type="submit" value="ok" />
@@ -38,4 +40,5 @@ subject1 : @ViewBag.subject1
 <br />
 subject2 : @ViewBag.subject2
 <br />
+City : @ViewBag.city
 <br />

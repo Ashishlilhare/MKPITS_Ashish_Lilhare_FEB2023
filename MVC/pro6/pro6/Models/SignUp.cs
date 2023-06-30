@@ -9,5 +9,11 @@
         public bool subject1 { get; set; }
         public bool subject2 { get; set; }
 
+        public city getcity { get; set; }
+
+    }
+    public enum city
+    {
+        Nagpur, Mumbai, Banglore,Hyderabad ,Delhi 
     }
 }
