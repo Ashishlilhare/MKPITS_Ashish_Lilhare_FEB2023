@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@model validationpro2.Models.StudentModel
+<h2>Student Details</h2>
+@using (Html.BeginForm("StudentDetails", "Home", FormMethod.Post))
+{
+    <ol>
+        <li>
+            @Html.LabelFor(m => m.Name)
+            @Html.TextBoxFor(m => m.Name)
+            @Html.ValidationMessageFor(m => m.Name)
+        </li>
+        <li>
+            @Html.LabelFor(m => m.Email)
+            @Html.TextBoxFor(m => m.Email)
+            @Html.ValidationMessageFor(m => m.Email)
+        </li>
+        <li>
+            @Html.LabelFor(m => m.ConfirmEmail)
+            @Html.TextBoxFor(m => m.ConfirmEmail)
+            @Html.ValidationMessageFor(m => m.ConfirmEmail)
+        </li>
+        <li>
+            @Html.LabelFor(m => m.Age)
+            @Html.TextBoxFor(m => m.Age)
+            @Html.ValidationMessageFor(m => m.Age)
+        </li>
+    </ol>
+    <input type="submit" value="Save Student Details" />
+}
+
+<h3 style="color:rebeccapurple">Student Details</h3>
+<h4 style="color:rebeccapurple">
+    <b>
+        Name: @ViewBag.name<br />
+        Email: @ViewBag.email<br />
+        Age: @ViewBag.age
+    </b>
+</h4>
