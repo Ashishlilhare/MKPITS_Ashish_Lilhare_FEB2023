@@ -1,0 +1,51 @@
+﻿<script src="~/Scripts/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+
+
+
+    $(document).ready(function () {
+
+        $("#State").change(function ()
+        {
+            $("#City").empty();
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("getcity")',
+                dataType: 'json',
+                data: { id: $("#State").val() },
+                success: function (city) {
+
+                    $.each(city, function (i, city) {
+                        $("#City").append('<option value="'
+                                                   + city.Value + '">'
+                                             + city.Text + '</option>');
+                    });
+                },
+                error: function (ex) {
+                    alert('Failed.' + ex);
+                }
+            });
+            return false;
+        })
+    });
+</script>
+
+@model dropdown.Models.Registration
+<div class="form-group">
+    @Html.LabelFor(model => model.State, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.DropDownListFor(model => model.State, ViewBag.state as List<SelectListItem>, new { style = "width: 200px;" })
+
+        @Html.ValidationMessageFor(model => model.State, "", new { @class = "text-danger" })
+    </div>
+</div>
+
+<div class="form-group">
+
+    @Html.LabelFor(model => model.City, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.DropDownListFor(model => model.City, new SelectList(string.Empty, "Value", "Text"), "--Select City--", new { style = "width:200px" })
+
+        @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+    </div>
+
