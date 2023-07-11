@@ -1,0 +1,54 @@
+﻿<fieldset>
+    <div class="form-horizontal">
+        <div class="editor-label">
+            Name
+        </div>
+        <div class="editor-label">
+            <input type="text" id="txtName" />
+        </div>
+        <div class="editor-label">
+            Address
+        </div>
+        <div class="editor-label">
+            <input type="text" id="txtAddress" />
+        </div>
+        <div class="editor-label">
+            City
+        </div>
+        <div class="editor-label">
+            <select id="txtCity">
+                <option value="nagpur">nagpur</option>
+                <option value="mumbai">mumbai</option>
+            </select>
+        </div>
+        <div class="editor-label">
+            <br />
+            <input class="btn-default" type="button" id="btnSave" value="Save" />
+        </div>
+    </div>
+</fieldset>
+
+<script src="~/Scripts/jquery-3.7.0.min.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function () {
+        $("#btnSave").click(function () {
+
+        $.ajax(
+            {
+                type: "Post",
+                url: "/Home/Index",
+                data:
+                {//pasing data
+                    Name: $("#txtName").val(),
+                    //Reading Textbpx Values using Jquery
+                    Address: $("#txtAddress").val(),
+                    City: $("#txtCity").val()
+                },
+                success: alert("record inserted")
+
+            });
+        });
+    });
+
+</script>
+<br/>
