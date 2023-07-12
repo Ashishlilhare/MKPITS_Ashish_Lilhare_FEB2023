@@ -1,0 +1,26 @@
+﻿@model curd.Controllers.tblState
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tblState</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.statename)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.statename)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.stateid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
