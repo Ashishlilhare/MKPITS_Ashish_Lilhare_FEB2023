@@ -5,7 +5,8 @@
     <div class="jumbotron">
         <h1>My Shop Site</h1>
         <p class="lead">My shop site for good buying experience.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg" style="width: 297px; height: 20px">Learn more &raquo;</a></p>
+        <p>&nbsp;</p>
+        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg" style="width: 297px; height: 45px">Learn more &raquo;</a></p>
     </div>
 
      <div>
